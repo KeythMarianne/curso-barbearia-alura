@@ -1,0 +1,333 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+}
+
+
+.caixa {
+	position:  relative;
+	width:  940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display:  inline;
+	margin:  0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color:  #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width:  940px;
+	margin:  0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display:  inline-block;
+	text-align: center;
+	width:  30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding:  30px 20px;
+	box-sizing:  border-box;
+	border:  2px solid #000000;
+	border-radius: 15px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size:  35px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight:  bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight:  bold;
+	margin-top:  10px;
+}
+
+footer {
+	text-align:  center;
+	background:  url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size:  13px;
+	margin:  20px 0 0;
+}
+
+.main-contato {
+	width:  940px;
+	margin: 0 auto;
+}
+/* Ver depois se não tem que colocar classe nesse main pq tem main na página de produtos tbm */
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:  40%;
+	padding: 15px 0;
+	background: orange;
+	color:  white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+} 
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead, .teste-colspan-keyth {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 5px 10px;
+}
+
+/* CSS da página inicial - index/home */
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	text-shadow: 1px 1px black;
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width:  940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 140px;
+	float: left;
+	margin: 0 20px 20px 0;
+	/* cima, direita, baixo, esquerda*/
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width:  940px;
+	margin: 0 auto;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🗸";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 5px 0px #000000;
+	/*Eixo X, Eixo Y, solido para transparente, intensidade da borda - quanto mais ela espalha, cor*/
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.5;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*Quando usar o @media screen para fazer o site ficar responsivo para celular, mexer apenas nas partes do
+código que precisam de alteração, o resto não precisa */
+@media screen and (max-width: 480px) {
+	
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width:  auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+/*Tentar fazer nas páginas de contato e produto também*/
+
+
+
+
+
+
+
+
+/* 
+
+--
+
+Para mostrar o poder do CSS
+
+main > p {
+	background: red;
+}
+> Para selecionar os filhos diretos. Neste caso, todos os "p" filhos diretos do main serão selecionados.
+
+img + p {
+	background: blue;
+}
++ Para selecionar o irmão mais próximo. Neste caso, apenas o "p" logo após a imagem será selecionado.
+
+img ~ p {
+	background: yellow;
+}
+~ Para selecionar todos os irmãos que vem após a imagem. 
+Neste caso, todos os "p" após a imagem serão selecionados.
+Note que, como esse comando vem após o anterior e possui o mesmo peso, o primeiro paragrafo não terá mais 
+a cor azul e sim a cor amarela, pois o último comando sobrepoem os anteriores, se tiverem mesmo peso.
+
+.principal p:not(#missao) {
+	background: orange;
+}
+:not() Para excluir algum elemento especifico. Neste caso, ele irá excluir o código com id="missao" 
+do comando. Assim, enquanto todos os outros paragrafos ficam laranja, o paragrafo da missao ficará
+amarelo, pois é o comando anterior a esse.
+
+--
+Opacidade em texto
+	color: rgba(0,0,0,0.3);
+	Para usar opacidade, transformar cor para rgb e usar a camada alfa - a
+
+--
+
+Exemplo de várias e diferentes bordas
+Sombra externa: 
+box-shadow: 10px 10px 5px 20px #00000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);
+Sombra interna: 
+box-shadow: inset 0 0 30px #FF0000;
+Sombra para texto:
+text-shadow: 2px 2px #FF0000;
+
+*/
